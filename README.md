@@ -3,11 +3,12 @@
 ## install
 
 #### .zshrc
-```
+``` shell
 source zprofile.zsh
 if [ "$ZPROFILE" = 'active' ] ; then zprofile::before; fi
 
-SCRIPT TO PROFILE 
+# SCRIPT TO PROFILE 
+# ...
 
 if [ "$ZPROFILE" = 'active' ] ; then zprofile::after; fi
 ```
