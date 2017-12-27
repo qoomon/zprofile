@@ -9,7 +9,8 @@ git clone https://github.com/qoomon/zprofile.git
 source zprofile/zprofile.zsh
 ```
 
-## Adjust .zshrc
+## Usage
+### Prepare .zshrc
 ```
 if [ "$ZPROFILE" = 'active' ] ; then zprofile::before; fi
 
@@ -19,7 +20,6 @@ if [ "$ZPROFILE" = 'active' ] ; then zprofile::before; fi
 if [ "$ZPROFILE" = 'active' ] ; then zprofile::after; fi
 ```
 
-### Usage
 | command                   |
 |---                        |
 |`zprofile`                 |
