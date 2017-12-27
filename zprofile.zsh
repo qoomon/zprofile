@@ -34,16 +34,7 @@ function __zprofile::profile {
   if [ "$1" = "-v" ]; then
     verbose='true'
   fi
-  (zprofile::active true; export ZPROFILE_VERBOSE="$verbose"; zsh -ic 'exit 0')
-}
-
-function zprofile::active {
-  local value="$1"
-  if [ -z "$value" ]; then
-    ${ZPROFILE:-false}
-  else
-    export ZPROFILE="$value"
-  fi
+  ZPROFILE='true' ZPROFILE_VERBOSE="$verbose" zsh -ic 'exit 0'
 }
 
 function zprofile::before {
