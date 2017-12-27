@@ -1,6 +1,6 @@
 # zprofile
 
-## install
+## Install
 ### [zgem](https://github.com/qoomon/zgem)
 ```zgem bundle 'https://github.com/qoomon/zprofile.git' from:'git' use:'zprofile.zsh'```
 ### manually
@@ -19,7 +19,7 @@ if [ "$ZPROFILE" = 'active' ] ; then zprofile::before; fi
 if [ "$ZPROFILE" = 'active' ] ; then zprofile::after; fi
 ```
 
-### usage
+### Usage
 | command                   |
 |---                        |
 |`zprofile`                 |
