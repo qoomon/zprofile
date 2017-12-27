@@ -34,7 +34,7 @@ function __zprofile::profile {
   if [ "$1" = "-v" ]; then
     verbose='true'
   fi
-  ZPROFILE='true' ZPROFILE_VERBOSE="$verbose" zsh -ic 'exit 0'
+  ZPROFILE='active' ZPROFILE_VERBOSE="$verbose" zsh -ic 'exit 0'
 }
 
 function zprofile::before {
